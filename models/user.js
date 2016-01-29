@@ -7,7 +7,7 @@ var User = new Schema({
 });
 User.plugin(passportLocalMongoose);
 
-exports.getUserModel = function (collection) {
+module.exports = function (collection) {
   collection = collection || 'User';
   return mongoose.model(collection, User);
 };

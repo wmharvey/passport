@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/test.js"
+    "test": "gulp",
+    "lint": "gulp lint"
   },
   "repository": {
     "type": "git",
@@ -28,5 +29,15 @@
     "passport-local-mongoose": "^4.0.0",
     "passport-twitter": "^1.0.3",
     "twitter": "^1.2.5"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^1.0.0",
+    "gulp": "^3.9.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-mocha": "^2.2.0",
+    "jshint": "^2.9.1",
+    "jshint-stylish": "^2.1.0",
+    "mocha": "^2.4.4"
   }
 }
